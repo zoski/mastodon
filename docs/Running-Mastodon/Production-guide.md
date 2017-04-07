@@ -81,6 +81,9 @@ server {
   error_page 500 501 502 503 504 /500.html;
 }
 ```
+## Apache2
+It's also possible to use apache2 as proxy instead of Nginx. There is a vhost exemple available [here](docs/Running-Mastodon/apache2_vhost.exemple.conf).
+You will have to enable the **proxy_wstunnel** module through `a2enmod proxy_wstunnel` run as root. Remember to reload apache2 after that.
 
 ## Running in production without Docker
 
